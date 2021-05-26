@@ -1,0 +1,14 @@
+---
+
+- name: Download Deb file
+  get_url:
+    url: "{{ vanta_deb_url }}"
+    dest: /tmp/vanta.deb
+    checksum: "sha256:{{ vanta_deb_checksum }}"
+
+- name: Install Vanta from deb package
+  apt:
+    deb: /tmp/vanta.deb
+  environment:
+    VANTA_KEY: "{{ vanta_key }}"
+    VANTA_OWNER_EMAIL: "{{ vanta_owner_email }}"

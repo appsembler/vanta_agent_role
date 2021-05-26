@@ -1,0 +1,14 @@
+---
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+   # check that the service file exists
+   - stat:
+       path: /etc/systemd/system/vanta.service
+     register: p
+
+   - assert:
+       that:
+         - p.stat.exists

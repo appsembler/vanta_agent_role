@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include vanta_agent_role"
+      include_role:
+        name: "vanta_agent_role"

@@ -1,0 +1,9 @@
+---
+
+vanta_version: v1.8.5
+vanta_deb_url: "https://vanta-agent.s3.amazonaws.com/{{ vanta_version }}/vanta.deb"
+vanta_deb_checksum: 342956d99825beb3625807979fb815633b1d8c0e4e26b0acb43f4aa29672b1b2
+
+# you will need to set these variable to your real key/email
+vanta_key: FAKE_KEY
+vanta_owner_email: fake@example.com
