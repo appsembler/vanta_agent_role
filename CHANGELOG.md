@@ -8,14 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
-
-* allow to install with or without owner email.
-
 ### Removed
+
+## [v1.1.0] - 2021-05-27
+
+- allow to install with or without owner email.
 
 ## [v1.0.0] - 2021-05-26
 ### Added
 - initial version.
 
-[Unreleased]: https://github.com/appsembler/vanta_agent_role/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/appsembler/vanta_agent_role/compare/v1.1.0...HEAD
+[v1.1.0]: https://github.com/appsembler/vanta_agent_role/releases/tag/v1.0.0..v1.1.0
 [v1.0.0]: https://github.com/appsembler/vanta_agent_role/releases/tag/v1.0.0
