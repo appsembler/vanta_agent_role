@@ -5,6 +5,7 @@
     url: "{{ vanta_deb_url }}"
     dest: /tmp/vanta.deb
     checksum: "sha256:{{ vanta_deb_checksum }}"
+  tags: ['vanta_agent']
 
 - name: Install Vanta from deb package
   apt:
@@ -12,6 +13,7 @@
   environment:
     VANTA_KEY: "{{ vanta_key }}"
   when: vanta_owner_email == ""
+  tags: ['vanta_agent']
   
 - name: Install Vanta from deb package
   apt:
@@ -20,3 +22,4 @@
     VANTA_KEY: "{{ vanta_key }}"
     VANTA_OWNER_EMAIL: "{{ vanta_owner_email }}"
   when: vanta_owner_email != ""
+  tags: ['vanta_agent']
